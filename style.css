@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.myBoard {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2px solid rgb(10, 10, 88);
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
