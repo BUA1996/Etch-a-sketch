@@ -11,13 +11,13 @@
         <h1>Etch a Sketch</h1>
         <div class="header">
             <h6>Select Size!</h6>
-            <button class="btn btn-success">Select</button>
+            <button id="selectSize" class="btn btn-success">Select</button>
         </div>
         <div class="myBoard"></div>
         <div class="footer">
-            <button class="btn btn-dark">Black</button>
-            <button class="btn btn-info">Choose Color</button>
-            <button class="btn btn-danger">Erase</button>
+            <button id="black" class="btn btn-dark" onclick="setColor('black')">Black</button>
+            <button id="randomColor" class="btn btn-info" onclick="setColor('random')">Choose Color</button>
+            <button id="erase" class="btn btn-danger">Erase</button>
         </div>
     </body>
 </html>
