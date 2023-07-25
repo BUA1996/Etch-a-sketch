@@ -47,15 +47,23 @@ erase.addEventListener('click', function(){
 //choosing colors for use
 let color = 'black';
 function colorDiv(){
-    if (color === 'random'){
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-    } else {
-        this.style.backgroundColor = 'black';
+    if (click){
+        if (color === 'random'){
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        } else {
+            this.style.backgroundColor = 'black';
+        };
     };
 };
-
 function setColor(colorChoice){
     color = colorChoice;
 };
 
+//conrolling the mouseover
+let click = false;
+document.querySelector('body').addEventListener('click', function(e){
+    if (e.target.tagName != 'BUTTON'){
+        click = !click;
+    };
+});
 

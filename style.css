@@ -3,6 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: antiquewhite;
 }
 
 .header {
@@ -29,7 +30,6 @@ body {
     display: grid;
     border: 2px solid rgb(10, 10, 88);
     border-radius: 10px;
-    background-color: antiquewhite;
     margin-top: 20px;
     margin-bottom: 20px;
 }
